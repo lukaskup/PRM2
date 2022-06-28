@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "58399021264",
+    "project_id": "prm2-754b9",
+    "storage_bucket": "prm2-754b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:58399021264:android:708b600f1d006d93da66d5",
+        "android_client_info": {
+          "package_name": "com.collage.prm2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "58399021264-5qfsek32hdgm51glnfc2pjjvit5ui5ff.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAK8iT2mqX_70Fuyf_f5zUh_LwNghvigGU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "58399021264-5qfsek32hdgm51glnfc2pjjvit5ui5ff.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
