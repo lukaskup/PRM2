@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import com.example.eventmanager.R
 import com.google.firebase.auth.FirebaseAuth
@@ -39,10 +40,10 @@ class RegisterFragment : Fragment() {
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password).addOnCompleteListener() {task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-                    findNavController().navigate()
+                    findNavController().navigate(R.id.action_registerFragment_to_mapFragment)
+                    Toast.makeText(activity, "Registered and logged in Succesfully!", Toast.LENGTH_SHORT).show()
                 } else {
-                    // If sign in fails, display a message to the user.
-                    System.out.println(task.exception)
+                    Toast.makeText(activity, "Authentication failed.", Toast.LENGTH_SHORT).show()
                 }
             }
 
