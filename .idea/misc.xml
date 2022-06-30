@@ -3,25 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/lukas/AndroidStudioProjects/MyApplication/app/src/main/res/layout/activity_main.xml" value="0.23822463768115942" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3165" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable/border.xml" value="0.516" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable/borderTop.xml" value="0.32" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable/border_top.xml" value="0.368" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable/ic_add.xml" value="0.3165" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable/ic_baseline_edit_24.xml" value="0.3165" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable/ic_delete.xml" value="0.368" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable/ic_edit.xml" value="0.3165" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3165" />
-        <entry key="..\:/studia/PRM/app/src/main/res/drawable/text_background.xml" value="0.3165" />
-        <entry key="..\:/studia/PRM/app/src/main/res/layout/activity_main.xml" value="0.440625" />
-        <entry key="..\:/studia/PRM/app/src/main/res/layout/fragment_add.xml" value="0.619281045751634" />
-        <entry key="..\:/studia/PRM/app/src/main/res/layout/fragment_list.xml" value="0.33" />
-        <entry key="..\:/studia/PRM/app/src/main/res/layout/fragment_update.xml" value="0.5" />
-        <entry key="..\:/studia/PRM/app/src/main/res/layout/fragment_view.xml" value="0.5" />
-        <entry key="..\:/studia/PRM/app/src/main/res/layout/list_row.xml" value="0.5" />
-        <entry key="..\:/studia/PRM/app/src/main/res/menu/delete_menu.xml" value="0.31354166666666666" />
-        <entry key="..\:/studia/PRM2/app/src/main/res/layout/fragment_view.xml" value="0.3671875" />
+        <entry key="..\:/studia/EventManager/app/src/main/res/layout/activity_login.xml" value="0.6833192209991532" />
+        <entry key="..\:/studia/EventManager/app/src/main/res/layout/activity_main.xml" value="0.5541666666666667" />
+        <entry key="..\:/studia/EventManager/app/src/main/res/layout/activity_register.xml" value="0.5541666666666667" />
+        <entry key="..\:/studia/EventManager/app/src/main/res/layout/fragment_login.xml" value="0.5401041666666667" />
+        <entry key="..\:/studia/EventManager/app/src/main/res/layout/fragment_register.xml" value="0.5541666666666667" />
       </map>
     </option>
   </component>

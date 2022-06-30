@@ -1,33 +1,41 @@
 {
   "project_info": {
-    "project_number": "58399021264",
-    "project_id": "prm2-754b9",
-    "storage_bucket": "prm2-754b9.appspot.com"
+    "project_number": "250111255960",
+    "project_id": "eventmanager-b0c9f",
+    "storage_bucket": "eventmanager-b0c9f.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:58399021264:android:708b600f1d006d93da66d5",
+        "mobilesdk_app_id": "1:250111255960:android:04ead688647639beefb7ed",
         "android_client_info": {
-          "package_name": "com.collage.prm2"
+          "package_name": "com.example.eventmanager"
         }
       },
       "oauth_client": [
         {
-          "client_id": "58399021264-5qfsek32hdgm51glnfc2pjjvit5ui5ff.apps.googleusercontent.com",
+          "client_id": "250111255960-46aktqma1h94q8tr7vvh6botagopfnth.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eventmanager",
+            "certificate_hash": "316442bbad8bfa2d76f395a11a0c007febf6f05e"
+          }
+        },
+        {
+          "client_id": "250111255960-bo2irbmhg51hvkr3k4oe6e268epvo69q.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAK8iT2mqX_70Fuyf_f5zUh_LwNghvigGU"
+          "current_key": "AIzaSyAnc8K26HEGNAZC_fzbWfmhSZ_hFxFvsfg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "58399021264-5qfsek32hdgm51glnfc2pjjvit5ui5ff.apps.googleusercontent.com",
+              "client_id": "250111255960-bo2irbmhg51hvkr3k4oe6e268epvo69q.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

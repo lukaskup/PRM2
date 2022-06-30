@@ -3,56 +3,21 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/my_nav"
-    app:startDestination="@id/listFragment">
-
+    app:startDestination="@id/loginFragment">
     <fragment
-        android:id="@+id/listFragment"
-        android:name="com.example.myapplication.fragments.list.ListFragment"
-        android:label="List"
-        tools:layout="@layout/fragment_list" >
+        android:id="@+id/loginFragment"
+        android:name="com.example.eventmanager.fragments.auth.LoginFragment"
+        android:label="LoginFragment" >
         <action
-            android:id="@+id/action_listFragment_to_addFragment"
-            app:destination="@id/addFragment" />
-        <action
-            android:id="@+id/action_listFragment_to_updateFragment"
-            app:destination="@id/updateFragment" />
-        <action
-            android:id="@+id/action_listFragment_to_viewFragment"
-            app:destination="@id/viewFragment" />
+            android:id="@+id/action_loginFragment_to_registerFragment"
+            app:destination="@id/registerFragment" />
     </fragment>
     <fragment
-        android:id="@+id/addFragment"
-        android:name="com.example.myapplication.fragments.add.AddFragment"
-        android:label="Add"
-        tools:layout="@layout/fragment_add" >
+        android:id="@+id/registerFragment"
+        android:name="com.example.eventmanager.fragments.auth.RegisterFragment"
+        android:label="RegisterFragment" >
         <action
-            android:id="@+id/action_addFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/updateFragment"
-        android:name="com.example.myapplication.fragments.update.UpdateFragment"
-        android:label="UpdateFragment" >
-        <action
-            android:id="@+id/action_updateFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-        <argument
-            android:name="currentTask"
-            app:argType="com.example.myapplication.data.Task" />
-    </fragment>
-    <fragment
-        android:id="@+id/viewFragment"
-        android:name="com.example.myapplication.fragments.view.ViewFragment"
-        android:label="Task view"
-        tools:layout="@layout/fragment_view">
-        <action
-            android:id="@+id/action_viewFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-        <action
-            android:id="@+id/action_viewFragment_to_updateFragment"
-            app:destination="@id/updateFragment" />
-        <argument
-            android:name="currentTask"
-            app:argType="com.example.myapplication.data.Task" />
+            android:id="@+id/action_registerFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
     </fragment>
 </navigation>
