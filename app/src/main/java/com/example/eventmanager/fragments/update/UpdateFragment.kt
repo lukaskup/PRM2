@@ -1,4 +1,4 @@
-package com.example.myapplication.fragments.update
+package com.example.eventmanager.fragments.update
 
 import android.app.DatePickerDialog
 import android.os.Bundle
@@ -13,9 +13,9 @@ import android.widget.Toast
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
-import com.example.myapplication.R
-import com.example.myapplication.data.Task
-import com.example.myapplication.data.TaskViewModel
+import com.example.eventmanager.R
+import com.example.eventmanager.data.Event
+import com.example.eventmanager.data.EventViewModel
 import kotlinx.android.synthetic.main.fragment_update.view.*
 import java.text.SimpleDateFormat
 import java.util.*
@@ -23,34 +23,33 @@ import java.util.*
 class UpdateFragment : Fragment() {
     private val myCalendar: Calendar = Calendar.getInstance()
     private val args by navArgs<UpdateFragmentArgs>()
-    private var deadline: Date? = null
-    private lateinit var mTaskViewModel: TaskViewModel
+    private var eventDate: Date? = null
+    private lateinit var mEventViewModel: EventViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val view =inflater.inflate(R.layout.fragment_update, container, false)
-        mTaskViewModel = ViewModelProvider(this)[TaskViewModel::class.java]
-        view.taskUpdateTitle.setText(args.currentTask.title)
-        view.taskUpdatePriority.setText(args.currentTask.priority.toString())
-        view.taskUpdateProgress.setText(args.currentTask.progress.toString())
-        view.taskUpdateEstimate.setText(args.currentTask.estimateTimeMinutes.toString())
-        deadline = args.currentTask.deadline
-        val editText = view.findViewById<EditText>(R.id.taskUpdateDeadline)
+        mEventViewModel = ViewModelProvider(this)[EventViewModel::class.java]
+        view.eventUpdateName.setText(args.currentEvent.name)
+        view.eventUpdateImage.setText(args.currentEvent.imageUrl)
+        view.eventUpdateLocation.setText(args.currentEvent.location)
+        eventDate = args.currentEvent.date
+        val editDate = view.findViewById<EditText>(R.id.eventUpdateDate)
 
-        updateLabel(editText, true)
+        updateLabel(editDate, true)
 
         val date =
             DatePickerDialog.OnDateSetListener { view, year, month, day ->
                 myCalendar[Calendar.YEAR] = year
                 myCalendar[Calendar.MONTH] = month
                 myCalendar[Calendar.DAY_OF_MONTH] = day
-                updateLabel(editText, false)
+                updateLabel(editDate, false)
 
             }
 
-        editText.setOnClickListener(View.OnClickListener {
+        editDate.setOnClickListener(View.OnClickListener {
             DatePickerDialog(
                 view.context,
                 date,
@@ -70,22 +69,21 @@ class UpdateFragment : Fragment() {
         val myFormat = "dd/MM/yy"
         val dateFormat = SimpleDateFormat(myFormat, Locale.US)
         if(skipUpdateDate) {
-            editText.setText(dateFormat.format(deadline!!))
+            editText.setText(dateFormat.format(eventDate!!))
         } else {
             editText.setText(dateFormat.format(myCalendar.time))
-            deadline = myCalendar.time
+            eventDate = myCalendar.time
         }
     }
 
     private fun updateItem(view: View) {
-        val taskTitle = view.taskUpdateTitle.text.toString()
-        val priority = view.taskUpdatePriority.text.toString()
-        val progress = view.taskUpdateProgress.text.toString()
-        val estimate= view.taskUpdateEstimate.text.toString()
+        val eventName = view.eventUpdateName.text.toString()
+        val eventImageUrl = view.eventUpdateImage.text.toString()
+        val eventLocation = view.eventUpdateLocation.text.toString()
 
-        if(inputCheck(taskTitle) && inputCheck(priority) && inputCheck(estimate) && deadline !== null) {
-            val task = Task(args.currentTask.id, taskTitle, priority.toInt(), progress.toInt(), deadline!!, estimate.toInt())
-            mTaskViewModel.updateTask(task)
+        if(inputCheck(eventName) && inputCheck(eventImageUrl) && inputCheck(eventLocation) && eventDate !== null) {
+            val event = Event(args.currentEvent.id, eventName, eventLocation,eventImageUrl, eventDate!!)
+            mEventViewModel.updateEvent(event)
             Toast.makeText(requireContext(), "Successfully updated!", Toast.LENGTH_SHORT).show()
 
             findNavController().navigate(R.id.action_updateFragment_to_listFragment)

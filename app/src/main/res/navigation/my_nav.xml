@@ -28,7 +28,7 @@
     </fragment>
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.example.myapplication.fragments.list.ListFragment"
+        android:name="com.example.eventmanager.fragments.list.ListFragment"
         android:label="ListFragment" >
         <action
             android:id="@+id/action_listFragment_to_updateFragment"
@@ -39,18 +39,22 @@
     </fragment>
     <fragment
         android:id="@+id/addFragment"
-        android:name="com.example.myapplication.fragments.add.AddFragment"
+        android:name="com.example.eventmanager.fragments.add.AddFragment"
         android:label="AddFragment" >
         <action
             android:id="@+id/action_addFragment_to_listFragment"
             app:destination="@id/listFragment" />
     </fragment>
+
     <fragment
         android:id="@+id/updateFragment"
-        android:name="com.example.myapplication.fragments.update.UpdateFragment"
+        android:name="com.example.eventmanager.fragments.update.UpdateFragment"
         android:label="UpdateFragment" >
         <action
             android:id="@+id/action_updateFragment_to_listFragment"
             app:destination="@id/listFragment" />
+        <argument
+            android:name="currentEvent"
+            app:argType="com.example.eventmanager.data.Event" />
     </fragment>
 </navigation>

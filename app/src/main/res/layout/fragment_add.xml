@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteY="33dp">
 
     <EditText
-        android:id="@+id/taskTitle"
+        android:id="@+id/eventAddName"
         android:layout_width="347dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -24,11 +24,11 @@
 
 
     <EditText
-        android:id="@+id/taskPriority"
+        android:id="@+id/eventAddLocation"
         android:layout_width="347dp"
         android:layout_height="42dp"
         android:ems="10"
-        android:hint="Priority"
+        android:hint="Location"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.245" />
 
     <EditText
-        android:id="@+id/eventDate"
+        android:id="@+id/eventAddDate"
         android:layout_width="350dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
@@ -46,46 +46,46 @@
         android:cursorVisible="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:hint="Deadline"
+        android:hint="Date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintVertical_bias="0.317" />
 
     <EditText
-        android:id="@+id/taskEstimate"
-        android:layout_width="350dp"
+        android:id="@+id/eventAddImage"
+        android:layout_width="347dp"
         android:layout_height="42dp"
         android:ems="10"
-        android:hint="Estimate (minutes)"
+        android:hint="Progress"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <Button
-        android:id="@+id/saveEvent"
+        android:id="@+id/addEvent"
         android:layout_width="349dp"
         android:layout_height="42dp"
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="64dp"
-        android:layout_height="23dp"
+        android:layout_width="93dp"
+        android:layout_height="18dp"
         android:rotationX="-1"
-        android:text="Add Task"
+        android:text="Add Event"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"

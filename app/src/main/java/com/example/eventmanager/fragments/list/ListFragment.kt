@@ -1,4 +1,4 @@
-package com.example.myapplication.fragments.list
+package com.example.eventmanager.fragments.list
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.eventmanager.R
 import com.example.eventmanager.data.EventViewModel

@@ -39,7 +39,7 @@ class LoginFragment : Fragment() {
             auth.signInWithEmailAndPassword(email, password)
                 .addOnCompleteListener() { task ->
                     if (task.isSuccessful) {
-                        findNavController().navigate(R.id.action_loginFragment_to_mapFragment)
+                        findNavController().navigate(R.id.action_loginFragment_to_listFragment)
                         Toast.makeText(activity, "Registered and logged in Succesfully!", Toast.LENGTH_SHORT).show()
                     } else {
                         Toast.makeText(activity, "Authentication failed.", Toast.LENGTH_SHORT).show()

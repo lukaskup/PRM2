@@ -40,7 +40,7 @@ class RegisterFragment : Fragment() {
             FirebaseAuth.getInstance().createUserWithEmailAndPassword(email, password).addOnCompleteListener() {task ->
                 if (task.isSuccessful) {
                     // Sign in success, update UI with the signed-in user's information
-                    findNavController().navigate(R.id.action_registerFragment_to_mapFragment)
+                    findNavController().navigate(R.id.action_registerFragment_to_listFragment)
                     Toast.makeText(activity, "Registered and logged in Succesfully!", Toast.LENGTH_SHORT).show()
                 } else {
                     Toast.makeText(activity, "Authentication failed.", Toast.LENGTH_SHORT).show()

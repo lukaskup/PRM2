@@ -9,7 +9,7 @@
     tools:layout_editor_absoluteY="33dp">
 
     <EditText
-        android:id="@+id/taskUpdateTitle"
+        android:id="@+id/eventUpdateName"
         android:layout_width="347dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -24,11 +24,11 @@
 
 
     <EditText
-        android:id="@+id/taskUpdatePriority"
+        android:id="@+id/eventUpdateLocation"
         android:layout_width="347dp"
         android:layout_height="42dp"
         android:ems="10"
-        android:hint="Priority"
+        android:hint="Location"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -38,7 +38,7 @@
         app:layout_constraintVertical_bias="0.245" />
 
     <EditText
-        android:id="@+id/taskUpdateDeadline"
+        android:id="@+id/eventUpdateDate"
         android:layout_width="350dp"
         android:layout_height="43dp"
         android:layout_marginTop="8dp"
@@ -46,16 +46,16 @@
         android:cursorVisible="false"
         android:focusable="false"
         android:focusableInTouchMode="false"
-        android:hint="Deadline"
+        android:hint="Date"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.524"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401" />
+        app:layout_constraintVertical_bias="0.317" />
 
     <EditText
-        android:id="@+id/taskUpdateProgress"
+        android:id="@+id/eventUpdateImage"
         android:layout_width="347dp"
         android:layout_height="42dp"
         android:ems="10"
@@ -63,24 +63,10 @@
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.453"
+        app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
-
-    <EditText
-        android:id="@+id/taskUpdateEstimate"
-        android:layout_width="350dp"
-        android:layout_height="42dp"
-        android:ems="10"
-        android:hint="Estimate (minutes)"
-        android:inputType="number"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.508"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.41" />
 
     <Button
         android:id="@+id/updateTask"
@@ -89,17 +75,17 @@
         android:text="Save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintHorizontal_bias="0.532"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.576" />
+        app:layout_constraintVertical_bias="0.499" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="93dp"
         android:layout_height="18dp"
         android:rotationX="-1"
-        android:text="Update Task"
+        android:text="Update Event"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.095"

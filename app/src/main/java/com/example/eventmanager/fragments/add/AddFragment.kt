@@ -1,4 +1,4 @@
-package com.example.myapplication.fragments.add
+package com.example.eventmanager.fragments.add
 
 import android.app.DatePickerDialog
 import android.os.Bundle
@@ -31,7 +31,7 @@ class AddFragment : Fragment() {
 
         mEventViewModel = ViewModelProvider(this).get(EventViewModel::class.java)
 
-        val editDate = view.findViewById<EditText>(R.id.eventDate);
+        val editDate = view.findViewById<EditText>(R.id.eventAddDate);
         val date =
             DatePickerDialog.OnDateSetListener { view, year, month, day ->
                 myCalendar[Calendar.YEAR] = year
@@ -50,7 +50,7 @@ class AddFragment : Fragment() {
             ).show()
         })
 
-        view.findViewById<Button>(R.id.saveEvent).setOnClickListener{
+        view.findViewById<Button>(R.id.addEvent).setOnClickListener{
             saveData(view)
         }
 

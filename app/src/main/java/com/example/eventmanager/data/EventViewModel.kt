@@ -19,19 +19,19 @@ class EventViewModel(application: Application): AndroidViewModel(application) {
         }
     }
 
-    fun addTask(event: Event){
+    fun addEvent(event: Event){
         viewModelScope.launch(Dispatchers.IO) {
             repository.addEvent(event)
         }
     }
 
-    fun deleteTask(event: Event){
+    fun deleteEvent(event: Event){
         viewModelScope.launch(Dispatchers.IO) {
             repository.deleteEvent(event)
         }
     }
 
-    fun updateTask(event: Event){
+    fun updateEvent(event: Event){
         viewModelScope.launch(Dispatchers.IO) {
             repository.updateEvent(event)
         }
